@@ -1,0 +1,78 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: consolas;
+}
+
+h1 {
+    font-size: 20px;
+    font-family: Courier New;
+    color: white;
+}
+
+button {
+    border-radius: 10px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to top, rgb(0, 0, 0), rgb(0, 0, 0));
+    border-radius: 10px;
+}
+
+.calculator-grid {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 40.7px);
+}
+
+.calculator-grid>button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid black;
+    outline: none;
+    background-color: rgba(255, 13, 13, 0.75);
+}
+
+.calculator-grid>button:hover {
+    background-color: rgba(255, 255, 255, 0.9)
+}
+
+.span-two {
+    grid-column: span 2;
+}
+
+.span-four {
+    grid-column: span 4;
+}
+
+.output {
+    grid-column: 1 / -1;
+    background-color: rgb(39, 28, 100);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 7px;
+    word-wrap: break-word;
+    word-break: break-all;
+    border-radius: 10px;
+    
+}
+
+.output .current-operand {
+    font-family: "consolas";
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+}
+
+.output .previous-operand {
+    font-family: "consolas";
+    color: rgb(255, 255, 255);
+    font-size: 11px;
+}
