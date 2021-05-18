@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- makes width equal to device width, and initial zoom level -->
+    <title>CSS Shapes</title> <!-- title of page on tab -->
+    <link href="style.css" rel="stylesheet" type="text/css" /> <!-- links CSS -->
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon.png"> <!-- favicon (little image on tab) --> 
+  </head>
+  <body>
+		<script src="script.js"></script> <!-- links the JS (but no JS is used) -->
+
+		<div id="rotateAnchor"><br><br><br><br></div> <!-- where user goes to when clicking chevrons -->
+
+		<h2>Rotate</h2>
+		<div class="section"> <!-- section with shapes using rotate -->
+			<div class="container">
+				<div class="type1 shape"><div class="text">type1</div></div>
+				<div class="type1 shape"><div class="text">type1</div></div>
+				<div class="type1 shape"><div class="text">type1</div></div>
+				<div class="type1 shape"><div class="text">type1</div></div>
+				<div class="type1 shape"><div class="text">type1</div></div>
+				<div class="type1 shape"><div class="text">type1</div></div>
+			</div>
+			
+			<div class="container">
+				<div class="type2 shape"><div class="text">type2</div></div>
+				<div class="type2 shape"><div class="text">type2</div></div>
+				<div class="type2 shape"><div class="text">type2</div></div>
+				<div class="type2 shape"><div class="text">type2</div></div>
+				<div class="type2 shape"><div class="text">type2</div></div>
+				<div class="type2 shape"><div class="text">type2</div></div>
+			</div>
+
+			<div class="container">
+				<div class="type3  shape"><div class="text">type3</div></div>
+				<div class="type3  shape"><div class="text">type3</div></div>
+				<div class="type3  shape"><div class="text">type3</div></div>
+				<div class="type3  shape"><div class="text">type3</div></div>
+				<div class="type3  shape"><div class="text">type3</div></div>
+				<div class="type3  shape"><div class="text">type3</div></div>
+			</div>
+
+			<div class="container">
+				<div class="type15  shape"><div class="text">type15</div></div>
+				<div class="type15  shape"><div class="text">type15</div></div>
+				<div class="type15  shape"><div class="text">type15</div></div>
+				<div class="type15  shape"><div class="text">type15</div></div>
+				<div class="type15  shape"><div class="text">type15</div></div>
+				<div class="type15  shape"><div class="text">type15</div></div>
+			</div>
+		</div>
+
+		<a href="javascript: document.querySelector('#clipPathAnchor').scrollIntoView();">
+			<img src="downChevron.png" class="downChevron chevron"> <!-- chevron to go to next section -->
+		</a>
+
+		<div id="clipPathAnchor"><br><br><br><br></div> 
+		
+		<a href="javascript: document.querySelector('#rotateAnchor').scrollIntoView();">
+			<img src="upChevron.png" class="upChevron chevron"> <!-- chevron to go to next section -->
+		</a>
+
+		<h2 id="clipPath">Clip-Path</h2>
+		<div class="section"> <!--section with shapes using clip-path -->
+			<div class="container">
+				<div class="type4  shape"><div class="text">type4</div></div>
+				<div class="type4  shape"><div class="text">type4</div></div>
+				<div class="type4  shape"><div class="text">type4</div></div>
+				<div class="type4  shape"><div class="text">type4</div></div>
+				<div class="type4  shape"><div class="text">type4</div></div>
+				<div class="type4  shape"><div class="text">type4</div></div>
+			</div>
+			
+			<div class="container">
+				<div class="type5 shape"><div class="text">type5</div></div>
+				<div class="type5 shape"><div class="text">type5</div></div>
+				<div class="type5 shape"><div class="text">type5</div></div>
+				<div class="type5 shape"><div class="text">type5</div></div>
+				<div class="type5 shape"><div class="text">type5</div></div>
+				<div class="type5 shape"><div class="text">type5</div></div>
+			</div>
+
+			<div class="container">
+				<div class="type6 shape"><div class="text">type6</div></div>
+				<div class="type6 shape"><div class="text">type6</div></div>
+				<div class="type6 shape"><div class="text">type6</div></div>
+				<div class="type6 shape"><div class="text">type6</div></div>
+				<div class="type6 shape"><div class="text">type6</div></div>
+				<div class="type6 shape"><div class="text">type6</div></div>
+			</div>
+
+			<div class="container">
+				<div class="type7 shape" id="type7a"><div class="text">type7a</div></div>
+				<div class="type7 shape" id="type7b"><div class="text">type7b</div></div>
+				<div class="type7 shape" id="type7c"><div class="text">type7c</div></div>
+				<div class="type7 shape" id="type7d"><div class="text">type7d</div></div>
+				<div class="type7 shape" id="type7e"><div class="text">type7e</div></div>
+				<div class="type7 shape" id="type7f"><div class="text">type7f</div></div>
+			</div>
+		</div>
+		
+		<a href="javascript: document.querySelector('#scaleAnchor').scrollIntoView();">
+			<img src="downChevron.png" class="downChevron chevron"> <!-- chevron to go to next section -->
+		</a>
+
+		<div id="scaleAnchor"><br><br><br><br></div>
+
+		<a href="javascript: document.querySelector('#clipPathAnchor').scrollIntoView();">
+			<img src="upChevron.png" class="upChevron chevron"> <!-- chevron to go to next section -->
+		</a>
+
+		<h2>Scale</h2>
+		<div class="section">	<!-- section with shapes using scale -->	
+			<div class="container">
+				<div class="type8 shape" id="type8a"><div class="text">type8a</div></div>
+				<div class="type8 shape" id="type8b"><div class="text">type8b</div></div>
+				<div class="type8 shape" id="type8c"><div class="text">type8c</div></div>
+				<div class="type8 shape" id="type8d"><div class="text">type8d</div></div>
+				<div class="type8 shape" id="type8e"><div class="text">type8e</div></div>
+				<div class="type8 shape" id="type8f"><div class="text">type8f</div></div>
+			</div>
+
+			<div class="container">
+				<div class="type9 shape" id="type9a"><div class="text">type9a</div></div>
+				<div class="type9 shape" id="type9b"><div class="text">type9b</div></div>
+				<div class="type9 shape" id="type9c"><div class="text">type9c</div></div>
+				<div class="type9 shape" id="type9d"><div class="text">type9d</div></div>
+				<div class="type9 shape" id="type9e"><div class="text">type9e</div></div>
+				<div class="type9 shape" id="type9f"><div class="text">type9f</div></div>
+			</div>
+
+			<div class="container">
+				<div class="type10 shape"><div class="text">type10</div></div>
+				<div class="type10 shape"><div class="text">type10</div></div>
+				<div class="type10 shape"><div class="text">type10</div></div>
+				<div class="type10 shape"><div class="text">type10</div></div>
+				<div class="type10 shape"><div class="text">type10</div></div>
+				<div class="type10 shape"><div class="text">type10</div></div>
+			</div>
+
+			<div class="container">
+				<div class="type11 shape"><div class="text">type11</div></div>
+				<div class="type11 shape"><div class="text">type11</div></div>
+				<div class="type11 shape"><div class="text">type11</div></div>
+				<div class="type11 shape"><div class="text">type11</div></div>
+				<div class="type11 shape"><div class="text">type11</div></div>
+				<div class="type11 shape"><div class="text">type11</div></div>
+			</div>
+		</div>
+
+		<a href="javascript: document.querySelector('#backgroundColorAnchor').scrollIntoView();">
+			<img src="downChevron.png" class="downChevron chevron"> <!-- chevron to go to next section -->
+		</a>
+
+		<div id="backgroundColorAnchor"><br><br><br><br></div>
+	
+		<a href="javascript: document.querySelector('#scaleAnchor').scrollIntoView();">
+			<img src="upChevron.png" class="upChevron chevron"> <!-- chevron to go to next section -->
+		</a>
+
+		<h2>Background-Color</h2>
+		<div class="section">	<!-- section with shapes using background-color -->
+			<div class="container">
+				<div class="type12 shape"><div class="text">type12</div></div>
+				<div class="type12 shape"><div class="text">type12</div></div>
+				<div class="type12 shape"><div class="text">type12</div></div>
+				<div class="type12 shape"><div class="text">type12</div></div>
+				<div class="type12 shape"><div class="text">type12</div></div>
+				<div class="type12 shape"><div class="text">type12</div></div>
+			</div>
+
+			<div class="container">
+				<div class="type13 shape"><div class="text">type13</div></div>
+				<div class="type13 shape"><div class="text">type13</div></div>
+				<div class="type13 shape"><div class="text">type13</div></div>
+				<div class="type13 shape"><div class="text">type13</div></div>
+				<div class="type13 shape"><div class="text">type13</div></div>
+				<div class="type13 shape"><div class="text">type13</div></div>
+			</div>
+
+			<div class="container">
+				<div class="type14 shape" id="type14a"><div class="text">type14a</div></div>
+				<div class="type14 shape" id="type14b"><div class="text">type14b</div></div>
+				<div class="type14 shape" id="type14c"><div class="text">type14c</div></div>
+				<div class="type14 shape" id="type14d"><div class="text">type14d</div></div>
+				<div class="type14 shape" id="type14e"><div class="text">type14e</div></div>
+				<div class="type14 shape" id="type14f"><div class="text">type14f</div></div>
+			</div>
+		</div>
+
+		<div id="endingAnchor"><br><br><br><br></div>
+  </body>
+</html>
