@@ -1,0 +1,513 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); /* for one of the font families */
+
+html, body {
+	background: rgb(46,62,124);
+	background: radial-gradient(circle, rgba(46,62,124,1) 35%, rgba(44,46,51,1) 100%); /* background gradient color */
+	scroll-behavior: smooth; /* to make it scroll nice and smooth when you press on of the chevrons */
+}
+
+h2 {
+	color: #1584c6;
+	font: 30px Inconsolata, monospace;
+	text-shadow: 0 0 2px #C8C8C8;	
+	text-align: center;
+}
+
+/* image of "arrow" (actually chevron) */
+.chevron {
+	width: 40px;
+	height: 30px;
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.downChevron {
+	margin-bottom: 400px; /* for space between chevron and next section */
+}
+
+/* each different section of different types of animation */
+.section {
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+/* one row of shapes */
+.container {
+	justify-content: center;
+	display: flex;
+}	
+
+/* one single shape */
+.shape {
+	background-color: #1584c6;
+	width: 100px;
+	height: 100px;
+	margin: 10px;
+	display: flex; /* to make all the text inside it aligned vertically + horizentally */
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.shape:hover {
+	filter: brightness(90%); /* makes it a bit darker on hover */
+}
+
+/* text specifying what type the shape belongs to */
+.text {
+	font-family: 'Poppins', sans-serif;
+	color: #C8C8C8;
+	font-size: 25px;
+}
+
+/* ### rotation ###
+/* Type 1 */
+.type1 {
+	width: 100px;
+	transition: transform 1.5s;
+}
+
+.type1:hover {
+	transform: rotate(360deg);
+}
+
+
+/* Type 2 */
+.type2 {
+	border-radius: 8px;
+	margin: 10px;
+	transition: transform 1.5s;
+}
+
+.type2:hover {
+	transform: rotate(360deg);
+}
+
+
+/* Type 3 */
+.type3 {
+	background-color: #1584c6;
+	border-radius: 30px;
+	transition: transform 1.5s;
+}
+
+.type3:hover {
+	border-radius: 40px;
+	transform: rotate(360deg);
+}
+
+
+/* Type 15 */
+.type15 {
+	background-color: #1584c6;
+	border-radius: 8px;
+	animation: loading9 2s infinite;
+}
+
+@keyframes loading9 {
+	0% { transform: rotate(20deg); }
+	50% { transform: rotate(-20deg); }
+	100% { transform: rotate(20deg); }
+}
+
+/* ### clip-path ###
+/* Type 4 */
+.type4 {
+	background-color: #1584c6;
+  clip-path: circle(100%);
+  transition: clip-path 1s;
+}
+
+.type4:hover {
+  clip-path: circle(25%);
+}
+
+
+/* Type 5 */
+.type5 {
+	animation: loading1 2s infinite;
+}
+
+@keyframes loading1 {
+	0% { clip-path: circle(100%); }
+	100% { clip-path: circle(25%); }
+}
+
+
+/* Type 6 */
+.type6 {
+	animation: loading2 2s infinite;
+}
+
+@keyframes loading2 {
+  0% { clip-path: circle(75%); }
+  50% { clip-path: circle(25%); }
+  100% { clip-path: circle(75%); }
+}
+
+
+/* ### scale ### */
+/* Type 7 */
+/* a, b, c, d, e, and f so that each shape's animation comes at a specific percentage */
+#type7a {
+	animation: loading2a 2s infinite;
+}
+
+#type7b {
+	animation: loading2c 2s infinite;
+}
+
+#type7c {
+	animation: loading2c 2s infinite;
+}
+
+#type7d {
+	animation: loading2d 2s infinite;
+}
+
+#type7e {
+	animation: loading2e 2s infinite;
+}
+
+#type7f {
+	animation: loading2f 2s infinite;
+}
+
+@keyframes loading2a {
+	0% { clip-path: circle(75%); }
+	20% { clip-path: circle(25%); } /* this value changes for a "delayed" effect */
+	100% { clip-path: circle(75%); }
+}
+
+@keyframes loading2b {
+	5% {clip-path: circle(75%); }
+	30% {clip-path: circle(25%); } /* this value changes for a "delayed" effect */
+	100% {clip-path: circle(75%); }
+}
+
+@keyframes loading2c {
+	10% { clip-path: circle(75%); }
+	40% { clip-path: circle(25%); } /* this value changes for a "delayed" effect */
+	100% { clip-path: circle(75%); }
+}
+
+@keyframes loading2d {
+	15% {clip-path: circle(75%); }
+	50% {clip-path: circle(25%); } /* etc. */
+	100% {clip-path: circle(75%); }
+}
+
+@keyframes loading2e {
+	20% { clip-path: circle(75%); }
+	60% { clip-path: circle(25%); }
+	100% { clip-path: circle(75%); }
+}
+
+@keyframes loading2f {
+	25% {clip-path: circle(75%); }
+	70% {clip-path: circle(25%); }
+	100% {clip-path: circle(75%); }
+}
+
+
+/* Type 8 */
+#type8a {
+	animation: loading3a 3s infinite;
+}
+
+#type8b {
+	animation: loading3b 3s infinite;
+}
+
+#type8c {
+	animation: loading3c 3s infinite;
+}
+
+#type8d {
+	animation: loading3d 3s infinite;
+}
+
+#type8e {
+	animation: loading3e 3s infinite;
+}
+
+#type8f {
+	animation: loading3f 3s infinite;
+}
+
+@keyframes loading3a {
+	0% { transform: scale(0.5); }
+	100% { transform: scale(1.5); }
+}
+
+@keyframes loading3b {
+	5% { transform: scale(0.5); }
+	100% { transform: scale(1.5); }
+}
+
+@keyframes loading3c {
+	10% { transform: scale(0.5); }
+	100% { transform: scale(1.5); }
+}
+
+@keyframes loading3d {
+	15% { transform: scale(0.5); }
+	100% { transform: scale(1.5); }
+}
+
+@keyframes loading3e {
+	20% { transform: scale(0.5); }
+	100% { transform: scale(1.5); }
+}
+
+@keyframes loading3f {
+	25% { transform: scale(0.5); }
+	100% { transform: scale(1.5); }
+}
+
+
+
+/* Type 9 */
+.type9 {
+	border-radius: 50%;
+}
+
+#type9a {
+	animation: loading3a 2s infinite;
+}
+
+#type9b {
+	animation: loading3b 2s infinite;
+}
+
+#type9c {
+	animation: loading3c 2s infinite;
+}
+
+#type9d {
+	animation: loading3d 2s infinite;
+}
+
+#type9e {
+	animation: loading3e 2s infinite;
+}
+
+#type9f {
+	animation: loading3f 2s infinite;
+}
+
+@keyframes loading3a {
+	0% { transform: scale(0.5); }
+	100% { transform: scale(1.1); }
+	/* 100% { transform: scale(0.5); } */
+}
+
+@keyframes loading3b {
+	15% { transform: scale(0.5); }
+	100% { transform: scale(1.1); }
+	/* 100% { transform: scale(0.5); } */
+}
+
+@keyframes loading3c {
+	30% { transform: scale(0.5); }
+	100% { transform: scale(1.1); }
+	/* 100% { transform: scale(0.5); } */
+}
+
+@keyframes loading3d {
+	45% { transform: scale(0.5); }
+	100% { transform: scale(1.1); }
+	/* 100% { transform: scale(0.5); } */
+}
+
+@keyframes loading3e {
+	60% { transform: scale(0.5); }
+	100% { transform: scale(1.1); }
+	/* 100% { transform: scale(0.5); } */
+}
+
+@keyframes loading3f {
+	75% { transform: scale(0.5); }
+	100% { transform: scale(1.1); }
+	/* 100% { transform: scale(0.5); } */
+}
+
+
+/* Type 10 */
+.type10 {
+	border-radius: 8px;
+	animation: loading4 3s infinite;
+}
+
+@keyframes loading4 {
+	0% { transform: scale(0.5); }
+  50% { transform: scale(1.1); }
+	100% { transform: scale(0.5); }
+}
+
+/* Type 11 */
+.type11 {
+	margin: 5px;
+	animation: loading5 3s infinite;
+}
+
+@keyframes loading5 {
+	0% { transform: scale(0.5); }
+  50% { transform: scale(1.1); }
+	100% { transform: scale(0.5); }
+}
+
+
+/* ### background-color ### */
+/* Type 12 */
+.type12 {
+	border-radius: 50%;
+	animation: loading6 3s infinite;
+}
+
+@keyframes loading6 {
+	0% { background-color: #1584c6; }
+  50% { background-color: #C8C8C8; }
+	100% { background-color: #1584c6; }
+}
+
+
+/* Type 13 */
+.type13 {
+	border-radius: 50%;
+	animation: loading7 3s infinite;
+}
+
+@keyframes loading7 {
+	0% { background-color: #1584c6; }
+	25% { background-color: #C8C8C8; }
+  50% { background-color: #1584c6; }
+	75% { background-color: #C8C8C8; }
+	100% { background-color: #1584c6; }
+}
+
+
+/* Type 14 */
+.type14 {
+	border-radius: 50%;
+}
+
+#type14a {
+	animation: loading8a 2s infinite;
+}
+
+#type14b {
+	animation: loading8b 2s infinite;
+}
+
+#type14c {
+	animation: loading8c 2s infinite;
+}
+
+#type14d {
+	animation: loading8d 2s infinite;
+}
+
+#type14e {
+	animation: loading8e 2s infinite;
+}
+
+#type14f {
+	animation: loading8f 2s infinite;
+}
+
+@keyframes loading8a {
+	0% { background-color: #1584c6; }
+	100% { 
+		background-color: #C8C8C8; }
+}
+
+@keyframes loading8b {
+	15% { background-color: #1584c6; }
+	100% { background-color: #C8C8C8; }
+}
+
+@keyframes loading8c {
+	30% { background-color: #1584c6; }
+	100% { background-color: #C8C8C8; }
+}
+
+@keyframes loading8d {
+	45% { background-color: #1584c6; }
+	100% { background-color: #C8C8C8; }
+}
+
+@keyframes loading8e {
+	60% { background-color: #1584c6; }
+	100% { background-color: #C8C8C8; }
+	/* 100% { transform: scale(0.5); } */
+}
+
+@keyframes loading8f {
+	75% { background-color: #1584c6; }
+	100% { background-color: #C8C8C8; }
+}
+
+
+/* Reponsive web design */
+@media only screen and (max-width: 740px) {
+	.section {
+		display: flex;
+		justify-content: center;
+	}
+
+	.container {
+		justify-content: center;
+		display: flex;
+		flex-direction: column; /* change it to vertical layout instead of horizental */
+	}
+
+	.shape {
+		width: 50px;
+		height: 50px;
+	}
+
+	.shape:active {	/* instead of hover, on touch screen, users can tap */
+		filter: brightness(90%);
+	}
+
+	.text {
+	font-size: 12px; /* text smaller so that it fits */
+	}
+
+	.type11 {
+		margin: 2px; /* for type 11, for different shapes to touch "lightly" */
+	}
+}
+
+/* scrollbar*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #2f84c6;
+	border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #16629c;
+	border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:active {
+	background: #134e7b;
+	border-radius: 4px;
+	width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #7aa1bf;
+}
+
+/* highlight text */
+::selection {
+	background: #5083a9;
+	text-shadow: none;
+}
